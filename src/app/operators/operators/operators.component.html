@@ -1,0 +1,9 @@
+<div *ngFor="let page of operators">
+    <ul>
+        <li>
+            <p [routerLink]="page.path">
+                {{page.path}}
+            </p>
+        </li>
+    </ul>
+</div>
