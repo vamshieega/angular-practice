@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy } from '@angular/compiler/src/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Observable, forkJoin, of } from 'rxjs';
 
 @Component({
   selector: 'app-forkjoin',
   templateUrl: './forkjoin.component.html',
-  styleUrls: ['./forkjoin.component.scss']
+  styleUrls: ['./forkjoin.component.scss'],
 })
 export class ForkjoinComponent implements OnInit {
-
-
   /**
    Fork Join : It will give the last value of each observable in the same order
 

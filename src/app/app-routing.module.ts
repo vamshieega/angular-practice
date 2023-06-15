@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: 'rxjs', pathMatch: 'full' },
-  {
-    path: 'rxjs',
-    loadChildren: () => import('./rxjs-module/rxjs.module').then(m => m.RxjsModule),
-  },
+  // { path: '', redirectTo: 'rxjs', pathMatch: 'full' },
+  // {
+  //   path: 'rxjs',
+  //   loadChildren: () => import('./rxjs-module/rxjs.module').then(m => m.RxjsModule),
+  // },
   {
     path: 'subject',
     loadChildren: () => import('./subjects/subjects.module').then(m => m.SubjectsModule)
